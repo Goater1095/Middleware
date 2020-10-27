@@ -1,25 +1,13 @@
 # Restaurant-List Refactor (餐廳清單)
 
-一個使用 Express + node.js 建立的餐廳清單
+一個使用 Express + node.js 建立的 middleware
 
 ### 功能描述 (features)：
 
-- 使用者可以在首頁看到所有餐廳與它們的簡單資料：
-  餐廳照片
-  餐廳名稱
-  餐廳分類
-  餐廳評分
-- 使用者可以再點進去看餐廳的詳細資訊：
-  類別
-  地址
-  電話
-  描述
-  圖片
-- 使用者可以透過"搜尋餐廳名稱"來找到特定的餐廳
-- 使用者可以透過"新增餐廳清單"來建立特定的餐廳
-- 使用者可以透過"Edit button" & "修改餐廳內容" 變更餐廳的詳細資訊
-- 使用者可以透過"Detail button"進入看餐廳的詳細資訊
-- 使用者可以透過"Delete button" & "刪除餐廳" 移除不想要的餐廳
+- 伺服器收到任何來自瀏覽器的 request 時，都會自動把資訊紀錄到 server log 裡，包括：
+- 時間戳記 (time-stamps) - 以當地時間 (台北) 顯示
+- 請求的 HTTP 方法
+- URL
 
 ### 安裝
 
@@ -53,8 +41,3 @@ npm run dev  //執行程式
 - Visual Studio Code - 開發環境
 - Node.js - 執行環境
 - Express - 應用程式架構
-- Express-Handlebars - 模板引擎
-- Body-Parser - url-encoded
-- MongoDB - Data base
-- Mongoose - ODM for MongoDB
-- Method-Override - Modify request Verb

@@ -3,6 +3,7 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+//design middleware
 app.use(function (req, res, next) {
   let today = new Date()
   let year = today.getFullYear()
